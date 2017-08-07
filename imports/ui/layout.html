@@ -1,0 +1,18 @@
+<template name="layout">
+  <h1>Know-Now!</h1>
+  {{> Template.dynamic template=main}}
+</template>
+
+<template name="novoStatus">
+  <select id="local">
+    <option value="pao">Pão de Açucar</option>
+    <option value="cristo">Cristo Redentor</option>
+    <option value="ipanema">Praia de Ipanema</option>
+    <option value="jardim">Jardim Botânico</option>
+  </select>
+  <br/><br/>
+  Como está?<br/>
+  <input id="status">
+  <br/>
+  <button>Enviar status!</button>
+</template>

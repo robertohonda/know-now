@@ -12,5 +12,6 @@ Meteor.methods({
 			local, 
 			status
 		});
+		//throw new Meteor.Error('rá');
 	}
 });

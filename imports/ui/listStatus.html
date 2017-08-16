@@ -1,8 +1,9 @@
 <template name="listStatus">
+	<ul class="collection">
 	{{#each statusList}}
-		{{data}} {{local}} {{status}} 
-		<br/>
+		{{> itemStatus}}
 	{{/each}}
+	</ul>
 
 	<a href="{{pathFor 'newStatus'}}">Reportar Status</a>
 </template>

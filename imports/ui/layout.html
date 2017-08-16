@@ -1,18 +1,31 @@
 <template name="layout">
-  <h1>Know-Now!</h1>
-  {{> Template.dynamic template=main}}
+
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="{{pathFor 'home'}}" class="brand-logo">Know-Now!</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{{pathFor 'home'}}">Know-Now!</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      {{> Template.dynamic template=main}}
+
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Roberto Honda</a>
+      </div>
+    </div>
+  </footer>
 </template>
 
-<template name="novoStatus">
-  <select id="local">
-    <option value="pao">Pão de Açucar</option>
-    <option value="cristo">Cristo Redentor</option>
-    <option value="ipanema">Praia de Ipanema</option>
-    <option value="jardim">Jardim Botânico</option>
-  </select>
-  <br/><br/>
-  Como está?<br/>
-  <input id="status">
-  <br/>
-  <button>Enviar status!</button>
-</template>
+

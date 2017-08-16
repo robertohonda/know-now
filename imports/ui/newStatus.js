@@ -4,7 +4,7 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import './newStatus.html';
 
 Template.newStatus.events({
-  'click button'(event, instance) {
+  'click .js-send-status'(event, instance) {
 
   	//alert($('select[id=local]').val() + ' está ' + 
    		//$('input[id=status]').val());
